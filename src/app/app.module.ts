@@ -14,17 +14,11 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {AuthModule} from './auth/auth.module';
 import {RequisitoModule} from './requisito/requisito.module';
+import { AngularFireModule } from '@angular/fire';
+import { environment_firebase } from '../environments/environment';
+import { MapModule } from './map/map.module';
 
-import { CambioModule } from './cambio/cambio.module';
-import { AprobacionModule } from './aprobacion/aprobacion.module';
 
-import { CasodeusoModule } from './casodeuso/casodeuso.module';
-import {StakeholderModule} from './stakeholder/stakeholder.module';
-import {OrganizacionModule} from './organizacion/organizacion.module';
-import {CondicionModule} from './condicion/condicion.module';
-import {CaminoModule} from './camino/camino.module'
-
-import { ObjetivoModule } from './objetivo/objetivo.module';
 
 
 @NgModule({
@@ -48,16 +42,9 @@ import { ObjetivoModule } from './objetivo/objetivo.module';
         NgxPermissionsModule.forRoot(),
         NgbModule,
         InicioModule,
-        CaminoModule,
-        CambioModule,
-        AprobacionModule,
-        CasodeusoModule,
-        CondicionModule,
-        StakeholderModule,
-        OrganizacionModule,
-        ObjetivoModule,
-        RequisitoModule
-    ],
+        MapModule,
+        RequisitoModule,
+        AngularFireModule.initializeApp(environment_firebase.firebaseConfig, 'LifeGuardBoots')    ],
     bootstrap: [AppComponent],
     providers: [
         {

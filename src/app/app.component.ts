@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import { AuthService } from './auth/auth.service';
-import {CreateAprobacionComponent} from './aprobacion/create-aprobacion/create-aprobacion.component';
 
 
 /**
