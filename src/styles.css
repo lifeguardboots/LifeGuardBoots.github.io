@@ -23,3 +23,8 @@
       }
 
       html { background-color: #4b5320; }
+
+      body {
+        margin:0;
+        padding:0;
+      }
