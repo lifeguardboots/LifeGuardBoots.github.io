@@ -20,11 +20,11 @@ const routes: Routes = [
         component: ListarInicioComponent
     },
     {
-        path: 'localizacion',
+        path: 'peloton1',
         component: MostrarmapaComponent
     },
     {
-        path: 'objetivos/new',
+        path: 'peloton2',
         component: MostrarmapaComponent
     },
     {

@@ -13,12 +13,12 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Localización</a>
+              aria-haspopup="true" aria-expanded="false">Localización en tiempo real</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" routerLink="/localizacion">Ver
-                objetivos</a>
+              <a class="dropdown-item" routerLink="/peloton1">Ver
+                pelotón 1</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/objetivos/new">Crear objetivo</a>
+              <a class="dropdown-item" routerLink="/peloton2">Ver pelotón 2</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -27,14 +27,32 @@
               Salud
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" routerLink="/requisitos">Ver requisitos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/requisitos/new">Crear requisito</a>
+              <a class="dropdown-item" routerLink="/signos">Ver estado signos vitales</a>
             </div>
           </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Historial de localización
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" routerLink="/historial">Historial de coordenadas</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Alertas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink="/alertas">Ver alertas</a>
+                </div>
+              </li>
         </ul>
+  
       </div>
   </nav>
+
   <div>
     <router-outlet></router-outlet>
   </div>

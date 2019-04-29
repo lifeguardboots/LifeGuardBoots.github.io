@@ -16,7 +16,7 @@ declare let tomtom: any;
 export class MostrarmapaComponent implements OnInit {
 
   ngOnInit() {
-    const map = L.map('map').setView([4.570868, -74.2973328], 13);
+    const map = L.map('map').setView([4.570868, -74.2973328], 6);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -24,13 +24,12 @@ export class MostrarmapaComponent implements OnInit {
 
     
     
-    var circle = L.circle([4.570868, -74.2973328], {
+    var circle = L.circle([2.9627290, -76.2546380], {
       color: 'red',
       fillColor: '#f03',
       fillOpacity: 0.5,
       radius: 1
   }).addTo(map)
-  .setLatLng([4.570868, -74.2973328])
   .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">Cristancho, Carlos</p><p> 4.570868, -74.2973328 </p>' )
   .openPopup();
 
