@@ -31,7 +31,7 @@ export class MostrarmapaComponent implements OnInit {
       radius: 1
   }).addTo(map)
   .setLatLng([4.570868, -74.2973328])
-  .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px"><br><p>Cristancho, Carlos</p><br><p></p> 4.570868, -74.2973328' )
+  .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">Cristancho, Carlos</p><p> 4.570868, -74.2973328 </p>' )
   .openPopup();
 
 

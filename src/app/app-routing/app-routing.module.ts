@@ -7,7 +7,9 @@ import { ListarInicioComponent } from '../inicio/listar-inicio/listar-inicio.com
 
 
 import { MostrarmapaComponent } from '../map/mostrarmapa/mostrarmapa.component';
-
+import { AuthGuard } from '../guards/';
+import { LoginComponent } from '../login/login/login.component';
+import { RegistroComponent } from '../register/registro/registro.component';
 
 
 
@@ -33,8 +35,10 @@ const routes: Routes = [
         path: 'objetivos/:id/update',
         component: MostrarmapaComponent
     },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegistroComponent },
     {
-        path: '', redirectTo: 'home', pathMatch: 'full'
+        path: '', redirectTo: 'home', pathMatch: 'full', canActivate: [AuthGuard] 
     },
 ];
 

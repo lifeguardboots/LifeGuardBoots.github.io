@@ -6,7 +6,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpErrorInterceptor } from './interceptors/httperrorinterceptor.service';
 import { NgxPermissionsModule } from 'ngx-permissions';
 import { ModalDialogModule } from 'ngx-modal-dialog';
 import { InicioModule } from './inicio/inicio.module';
@@ -18,14 +17,25 @@ import { MapModule } from './map/map.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AgmCoreModule } from '@agm/core';
+import { AlertComponent } from './components/alert/alert.component';
+import { ReactiveFormsModule }    from '@angular/forms';
+
+// used to create fake backend
+import { fakeBackendProvider } from './helpers';
+
+import { JwtInterceptor, ErrorInterceptor } from './helpers';
+import { LoginModule } from './login/login.module';
+import { RegisterModule } from './register/register.module';
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        AlertComponent,
     ],
     imports: [
         BrowserModule,
+        ReactiveFormsModule,
         AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
@@ -42,6 +52,8 @@ import { AgmCoreModule } from '@agm/core';
         NgbModule,
         InicioModule,
         MapModule,
+        LoginModule,
+        RegisterModule,
         AngularFireModule.initializeApp(environment_firebase.firebaseConfig, 'LifeGuardBoots'),
         AngularFireDatabaseModule,
         AgmCoreModule.forRoot({
@@ -52,11 +64,11 @@ import { AgmCoreModule } from '@agm/core';
     ],
     bootstrap: [AppComponent],
     providers: [
-        {
-            provide: HTTP_INTERCEPTORS,
-            useClass: HttpErrorInterceptor,
-            multi: true
-        }
+        { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+        // provider used to create fake backend
+        fakeBackendProvider
     ]
 })
 export class AppModule { }
