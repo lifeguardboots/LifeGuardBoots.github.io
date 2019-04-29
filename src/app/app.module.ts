@@ -13,12 +13,11 @@ import { InicioModule } from './inicio/inicio.module';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {AuthModule} from './auth/auth.module';
-import {RequisitoModule} from './requisito/requisito.module';
-import { AngularFireModule } from '@angular/fire';
 import { environment_firebase } from '../environments/environment';
 import { MapModule } from './map/map.module';
-
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -43,8 +42,14 @@ import { MapModule } from './map/map.module';
         NgbModule,
         InicioModule,
         MapModule,
-        RequisitoModule,
-        AngularFireModule.initializeApp(environment_firebase.firebaseConfig, 'LifeGuardBoots')    ],
+        AngularFireModule.initializeApp(environment_firebase.firebaseConfig, 'LifeGuardBoots'),
+        AngularFireDatabaseModule,
+        AgmCoreModule.forRoot({
+            // please get your own API key here:
+            // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+            apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+          })
+    ],
     bootstrap: [AppComponent],
     providers: [
         {

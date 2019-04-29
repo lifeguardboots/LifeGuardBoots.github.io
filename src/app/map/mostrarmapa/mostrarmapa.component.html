@@ -1,3 +1,49 @@
+<h1>{{ title }}</h1>
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+
+
+<!---
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
 <p>
   mostrarmapa works!
 </p>
+<h1>Markers</h1>
+<div *ngFor="let marker of markers | async">
+  <button (click)="flyTo(marker)">{{ marker.properties.message }}</button>
+  <button (click)="removeMarker(marker)">Delete</button>
+<div class="map" id="map"></div> 
+-->
+
+
+<!----
+<html ng-app="app-mostrarmapa">
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-mapboxgl-directive/0.43.2/angular-mapboxgl-directive.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-mapboxgl-directive/0.43.2/angular-mapboxgl-directive.min.js"></script>
+
+    <script>
+      var app = angular.module('app-mostrarmapa', ['mapboxgl-directive'])
+
+      .run([function () {
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWFhbHZhcmV6bG9wZXoiLCJhIjoiY2ptZjU0N3JrMGR5ZzNxcnNtanlsbGxwZiJ9.TiqdpJq0bSw-PkJgwY3DVA';
+      }]);
+    </script>
+  </head>
+  <body>
+    <div mapboxgl gl-style="'mapbox://styles/mapbox/dark-v9'"></div>
+  </body>
+</html>
+-->
