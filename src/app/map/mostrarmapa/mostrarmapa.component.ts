@@ -33,8 +33,8 @@ export class MostrarmapaComponent implements OnInit {
           this.mapElement.nativeElement,
           defaultLayers.normal.map,
           {
-              zoom: 10,
-              center: { lat: 37.7397, lng: -121.4252 }
+              zoom: 6,
+              center: { lat: 4.570868, lng: -74.2973328 }
           }
       );
   }
