@@ -3,6 +3,8 @@ import * as mapboxgl from 'mapbox-gl';
 import { MapService } from '../map.service';
 import { GeoJson, FeatureCollection } from '../map';
 
+declare var H: any;
+
 @Component({
   selector: 'app-mostrarmapa',
   //template: '<div #mapElement style="height:200px"></div>',
@@ -11,13 +13,42 @@ import { GeoJson, FeatureCollection } from '../map';
 })
 export class MostrarmapaComponent implements OnInit {
 
+  private platform: any;
+
+  @ViewChild("map")
+  public mapElement: ElementRef;
+
+  public constructor() {
+      this.platform = new H.service.Platform({
+          "app_id": "yed0f567gYqHCrIoDzyD",
+          "app_code": "NMlampFEWH9rpsUhLZjAEg"
+      });
+  }
+
+  public ngOnInit() { }
+
+  public ngAfterViewInit() {
+      let defaultLayers = this.platform.createDefaultLayers();
+      let map = new H.Map(
+          this.mapElement.nativeElement,
+          defaultLayers.normal.map,
+          {
+              zoom: 10,
+              center: { lat: 37.7397, lng: -121.4252 }
+          }
+      );
+  }
+
+}
+
+
+  /** 
   title: string = 'My first AGM project';
   lat: number = 51.678418;
   lng: number = 7.809007;
+  */
 
-  ngOnInit(): void {
-  }
-}
+ 
   /** map: mapboxgl.Map;
   @ViewChild('mapElement') mapElement: ElementRef;
   constructor() { }
