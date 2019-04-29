@@ -4,6 +4,8 @@ import { MapService } from '../map.service';
 import { GeoJson, FeatureCollection } from '../map';
 
 declare var H: any;
+declare let L;
+declare let tomtom: any;
 
 @Component({
   selector: 'app-mostrarmapa',
@@ -13,6 +15,47 @@ declare var H: any;
 })
 export class MostrarmapaComponent implements OnInit {
 
+  ngOnInit() {
+    const map = L.map('map').setView([4.570868, -74.2973328], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    
+    
+    var circle = L.circle([4.570868, -74.2973328], {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 1
+  }).addTo(map)
+  .setLatLng([4.570868, -74.2973328])
+  .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px"><br><p>Cristancho, Carlos</p><br><p></p> ')
+  .openPopup();
+
+
+  
+}
+
+
+  /** 
+  ngOnInit() {
+    const map = tomtom.L.map('map', {
+      key: 'AOM0gweA35Z7NhBIwdcIPm02gY3QuRJF',
+      basePath: '/assets/sdk',
+      center: [ 4.570868, -74.2973328 ],
+      zoom: 6,
+      source : 'vector'
+    });
+
+}*/
+}
+
+
+
+
+  /** 
   private platform: any;
 
   @ViewChild("map")
@@ -20,6 +63,7 @@ export class MostrarmapaComponent implements OnInit {
 
   public constructor() {
       this.platform = new H.service.Platform({
+        
           "app_id": "yed0f567gYqHCrIoDzyD",
           "app_code": "NMlampFEWH9rpsUhLZjAEg"
       });
@@ -38,8 +82,10 @@ export class MostrarmapaComponent implements OnInit {
           }
       );
   }
-
 }
+  */
+
+
 
 
   /** 
