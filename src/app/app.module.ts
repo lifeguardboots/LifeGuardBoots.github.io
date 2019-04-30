@@ -27,6 +27,8 @@ import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { SaludModule } from './salud/salud.module';
+import { HistorialModule } from './historial/historial.module';
+import { AlertasModule } from './alertas/alertas.module';
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import { SaludModule } from './salud/salud.module';
         SaludModule,
         MapModule,
         LoginModule,
+        HistorialModule,
+        AlertasModule,
         RegisterModule,
         AngularFireModule.initializeApp(environment_firebase.firebaseConfig, 'LifeGuardBoots'),
         AngularFireDatabaseModule,

@@ -11,6 +11,8 @@ import { AuthGuard } from '../guards/';
 import { LoginComponent } from '../login/login/login.component';
 import { RegistroComponent } from '../register/registro/registro.component';
 import { ListarSaludComponent } from '../salud/listar-salud/listar-salud.component';
+import { ListarHistorialComponent } from '../historial/listar-historial/listar-historial.component';
+import { ListarAlertasComponent } from '../alertas/listar-alertas/listar-alertas.component';
 
 
 
@@ -37,8 +39,12 @@ const routes: Routes = [
         component: ListarSaludComponent
     },
     {
-        path: 'objetivos/:id/update',
-        component: MostrarmapaComponent
+        path: 'historial',
+        component: ListarHistorialComponent
+    },
+    {
+        path: 'alertas',
+        component: ListarAlertasComponent
     },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegistroComponent },

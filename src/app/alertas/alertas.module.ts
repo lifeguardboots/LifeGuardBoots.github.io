@@ -7,6 +7,7 @@ import { AlertasDetailComponent } from './alertas-detail/alertas-detail.componen
   imports: [
     CommonModule
   ],
-  declarations: [ListarAlertasComponent, AlertasDetailComponent]
+  declarations: [ListarAlertasComponent, AlertasDetailComponent],
+  exports: [ListarAlertasComponent]
 })
 export class AlertasModule { }
