@@ -29,7 +29,11 @@ const routes: Routes = [
         component: MostrarmapaComponent
     },
     {
-        path: 'signos',
+        path: 'signos1',
+        component: ListarSaludComponent
+    },
+    {
+        path: 'signos2',
         component: ListarSaludComponent
     },
     {

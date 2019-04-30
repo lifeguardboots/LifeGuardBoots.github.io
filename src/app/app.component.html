@@ -27,7 +27,9 @@
               Salud
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" routerLink="/signos">Ver estado signos vitales</a>
+              <a class="dropdown-item" routerLink="/signos1">Ver estado signos vitales pelotón 1</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/signos2">Ver estado signos vitales pelotón 2</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -49,7 +51,10 @@
                 </div>
               </li>
         </ul>
-  
+        <form class="form-inline">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" (click)="logout()">Logout</button>
+          </form>
+
       </div>
   </nav>
 

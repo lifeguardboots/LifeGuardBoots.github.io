@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { AuthService } from './auth/auth.service';
+import { Router } from '@angular/router';
+import { AuthenticationService } from './services/authentication.service';
+import { User } from './models/user';
 
 
 /**
@@ -10,8 +13,9 @@ import { AuthService } from './auth/auth.service';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
+    currentUser: User;
     /**
      * The title that appears on the NavBar and the web browser
      */
@@ -20,18 +24,18 @@ export class AppComponent implements OnInit {
     /**
      * Assigns a title to the web page
      */
-    ngOnInit(): void {
-        this.title = "LifeGuardBoots";
-        this.authService.start();
+ 
+
+    constructor(
+        private router: Router,
+        private authenticationService: AuthenticationService
+    ) {
+        this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
     }
 
-       /**
-     * @ignore
-     */
-    constructor(private authService: AuthService) { }
-
-    logout(): void {
-        this.authService.logout()
+    logout() {
+        this.authenticationService.logout();
+        this.router.navigate(['/login']);
     }
 }
 
