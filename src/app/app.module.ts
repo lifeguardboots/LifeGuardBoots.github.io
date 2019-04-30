@@ -26,6 +26,7 @@ import { fakeBackendProvider } from './helpers';
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
+import { SaludModule } from './salud/salud.module';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { RegisterModule } from './register/register.module';
         NgxPermissionsModule.forRoot(),
         NgbModule,
         InicioModule,
+        SaludModule,
         MapModule,
         LoginModule,
         RegisterModule,

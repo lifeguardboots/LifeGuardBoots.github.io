@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-3" align= 'center'>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src= {{saludDetail.img}} alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title" align = 'center'>{{saludDetail.grado}} {{saludDetail.apellidos}}, {{saludDetail.nombres}}</h5>
+        <h6 align = 'center'> {{saludDetail.cargo}}, {{saludDetail.especialidad}}</h6>
+        <p class="card-text" align = 'center'>Fecha Nacimiento: {{saludDetail.fechaNacimiento}}</p>
+        <p class="card-text" align = 'center'>RH: {{saludDetail.rh}}</p>
+        <p class="card-text" align = 'center'>Temperatura: {{saludDetail.temperatura}}</p>
+        <b>Frecuencia Cardiaca:</b>
+        <img *ngIf="saludDetail.status" src= {{saludDetail.corazon}} width="280">
+        <img *ngIf="!saludDetail.status" src= {{saludDetail.corazon}}>
+
+      </div>
+    </div>
+  </div>
+  </div>
+

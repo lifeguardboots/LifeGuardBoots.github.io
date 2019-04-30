@@ -1,0 +1,60 @@
+<div class="row">
+<div class="col-9">
+  <h2 align="center">Información de salud pelotón 1</h2>
+  <table class="table table-sm table-dark">
+      <thead  align = 'center'>
+        <tr>
+          <th>ID</th>
+          <th>APELLIDOS</th>
+          <th>NOMBRES</th>
+          <th>FECHA DE NACIMIENTO</th>
+          <th>GRADO</th>
+          <th>CARGO</th>
+          <th>ESPECIALIDAD</th>
+          <th>RH</th>
+          <th>STATUS SALUD</th>
+        </tr>
+      </thead>
+      <tbody align = 'center'> 
+        <tr *ngFor="let i of salud">
+          <td>
+            <p>{{i.id}}</p>
+          </td>
+          <td >
+              <p >{{i.apellidos}}</p>
+            </td>
+            <td >
+                <p >{{i.nombres}}</p>
+              </td>
+          <td>
+              <p >{{i.fechaNacimiento}}</p>
+          </td>
+          <td >
+            <p >{{i.grado}}</p>
+          </td>
+          <td >
+            <p >{{i.cargo}}</p>
+          </td>
+          <td>
+            <p  >{{i.especialidad}}</p>
+        </td>
+        <td >
+            <p  >{{i.rh}}</p>
+        </td>
+        <td *ngIf="i.status">
+          <button type="button" class="btn btn-outline-success" (click)="onSelected(i.id)">OK</button>
+        </td>
+        <td *ngIf="!i.status">
+            <button type="button" class="btn btn-outline-danger" (click)="onSelected(i.id)">NO OK</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <div class="row">. </div>
+      <div *ngIf="selectedSalud">
+          <app-salud-detail [saludDetail]="selectedSalud"> </app-salud-detail>
+        </div>
+  </div>
+</div>

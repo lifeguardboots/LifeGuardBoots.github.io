@@ -10,6 +10,7 @@ import { MostrarmapaComponent } from '../map/mostrarmapa/mostrarmapa.component';
 import { AuthGuard } from '../guards/';
 import { LoginComponent } from '../login/login/login.component';
 import { RegistroComponent } from '../register/registro/registro.component';
+import { ListarSaludComponent } from '../salud/listar-salud/listar-salud.component';
 
 
 
@@ -28,8 +29,8 @@ const routes: Routes = [
         component: MostrarmapaComponent
     },
     {
-        path: 'objetivos/:id',
-        component: MostrarmapaComponent
+        path: 'signos',
+        component: ListarSaludComponent
     },
     {
         path: 'objetivos/:id/update',
