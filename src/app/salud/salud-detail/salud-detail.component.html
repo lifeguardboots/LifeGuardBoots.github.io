@@ -8,9 +8,9 @@
         <p class="card-text" align = 'center'>Fecha Nacimiento: {{saludDetail.fechaNacimiento}}</p>
         <p class="card-text" align = 'center'>RH: {{saludDetail.rh}}</p>
         <p class="card-text" align = 'center'>Temperatura: {{saludDetail.temperatura}}</p>
-        <b>Frecuencia Cardiaca:</b>
+        <b>Frecuencia Cardiaca (última información disponible):</b>
         <img *ngIf="saludDetail.status" src= {{saludDetail.corazon}} width="280">
-        <img *ngIf="!saludDetail.status" src= {{saludDetail.corazon}}>
+        <img *ngIf="!saludDetail.status" src= {{saludDetail.corazon}} width="280">
 
       </div>
     </div>
