@@ -43,7 +43,7 @@ export class MostrarmapaComponent implements OnInit {
 
 
   ngOnInit() {
-    const map = L.map('map').setView([4.570868, -74.2973328], 6);
+    const map = L.map('map').setView([2.9627290, -76.2546380], 14);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -51,14 +51,47 @@ export class MostrarmapaComponent implements OnInit {
 
     
     
-    var circle = L.circle([2.9627290, -76.2546380], {
+    var circle = L.circle([2.9847290, -76.2476380], {
       color: 'red',
-      fillColor: '#f03',
+      fillColor: 'red',
       fillOpacity: 0.5,
       radius: 1
   }).addTo(map)
   .bindPopup('<img src="../../../assets/capitan.png" width="90px" height="100px" align="middle" ><br><p align="center">FAUSCH, WALLIE</p><p> 2.9627290, -76.2546380 </p>' )
-  .openPopup();
+
+  var circulito = L.circle([2.9877390, -76.2466480], {
+    color: 'blue',
+    fillColor: 'blue',
+    fillOpacity: 0.5,
+    radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">MACMASTER, NATHANIL</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9827390, -76.2446480], {
+  color: 'blue',
+  fillColor: 'blue',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">ZORZETTI, GASPAR</p><p> 2.9727390, -76.2646480 </p>' )
+
+
+var circulito = L.circle([2.9817390, -76.2456480], {
+  color: 'blue',
+  fillColor: 'blue',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+
+
+
+
+
   this.getPeloton();
 
   
