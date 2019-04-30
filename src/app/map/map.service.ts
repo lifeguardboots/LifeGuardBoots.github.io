@@ -3,8 +3,13 @@ import {AngularFireDatabase,AngularFireList} from '@angular/fire/database';
 import { GeoJson } from './map';
 import * as mapboxgl from 'mapbox-gl';
 import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { Peloton } from './mostrarmapa/peloton';
+import { Observable } from 'rxjs';
+import { PelotonDetail } from './mostrarmapa/peloton-detail';
 
-
+const API_URL = "../../assets"
+const data = "/peloton1.json"
 
 const mb = environment.mapbox;
 
@@ -15,7 +20,7 @@ const mb = environment.mapbox;
 
 export class MapService {
 
-  constructor(private db: AngularFireDatabase) {
+  constructor(private db: AngularFireDatabase, private http: HttpClient) {
     mapboxgl.accessToken = mb.accessToken
   }
 
@@ -33,6 +38,27 @@ export class MapService {
   removeMarker($key: string) {
     return this.db.object('/markers/' + $key).remove()
   }
+
+   /**
+    * Returns the Observable object containing the list of approbations retrieved from the API
+    * @returns The list of approbations in real time.
+    */
+   getPeloton(): Observable<Peloton[]> {
+    return this.http.get<Peloton[]>(API_URL + data);
+}
+
+/**
+ * Returns the Observable object containing the approbation, with its detail, retrieved from the API
+ * @param aprobacionId id of the approbation to be retrieved.
+ * @returns the approbation, with its detail.
+ * 
+ */
+
+getPelotonDetail(personaId:number): Observable<PelotonDetail> {
+  //console.log(cambioId+" "+API_URL + "cambio-" + cambioId+".json");
+  return this.http.get<PelotonDetail>(API_URL + "/pel1-sol" + personaId + ".json");
+}
+
 
   /** getMarkers() {
 

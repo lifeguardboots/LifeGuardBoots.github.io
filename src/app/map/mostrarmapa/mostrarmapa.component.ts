@@ -2,6 +2,9 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import * as mapboxgl from 'mapbox-gl';
 import { MapService } from '../map.service';
 import { GeoJson, FeatureCollection } from '../map';
+import { Router } from '@angular/router';
+import { Peloton } from './peloton';
+import { PelotonDetail } from './peloton-detail';
 
 declare var H: any;
 declare let L;
@@ -14,6 +17,30 @@ declare let tomtom: any;
   styleUrls: ['./mostrarmapa.component.css']
 })
 export class MostrarmapaComponent implements OnInit {
+
+  constructor(private mapService: MapService, private router: Router) { }
+
+  peloton: Peloton[];
+  persona_id: number;
+  selectedPeloton: PelotonDetail;
+
+  getPeloton(): void {
+    this.mapService.getPeloton().subscribe(peloton => this.peloton = peloton);
+    
+  }
+
+  
+    onSelected(persona_id: number): void {
+      this.persona_id = persona_id;
+      this.selectedPeloton = new PelotonDetail();
+      this.mapService.getPelotonDetail(persona_id).subscribe(o => {this.selectedPeloton = o;
+        console.log("En la lista") ;
+       console.log(o) ;
+      });
+    }
+   
+
+
 
   ngOnInit() {
     const map = L.map('map').setView([4.570868, -74.2973328], 6);
@@ -30,9 +57,9 @@ export class MostrarmapaComponent implements OnInit {
       fillOpacity: 0.5,
       radius: 1
   }).addTo(map)
-  .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">Cristancho, Carlos</p><p> 4.570868, -74.2973328 </p>' )
+  .bindPopup('<img src="../../../assets/capitan.png" width="90px" height="100px" align="middle" ><br><p align="center">FAUSCH, WALLIE</p><p> 2.9627290, -76.2546380 </p>' )
   .openPopup();
-
+  this.getPeloton();
 
   
 }

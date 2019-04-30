@@ -1,4 +1,79 @@
-<div id="map"></div>
+<div class="row">
+    <div class="col">
+        <div id="map"></div>
+      </div>
+      <div class="col-1">
+
+      </div>
+      <div class="col">
+        <div class="row">. </div>
+          <div *ngIf="selectedPeloton">
+              <app-mapa-detail [pelotonDetail]="selectedPeloton"> </app-mapa-detail>
+            </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+        </div>
+    <div class="col-10">
+      <h2 align="center">Información del pelotón</h2>
+      <table class="table table-sm table-dark">
+          <thead  align = 'center'>
+            <tr>
+              <th>ID</th>
+              <th>APELLIDOS</th>
+              <th>NOMBRES</th>
+              <th>FECHA DE NACIMIENTO</th>
+              <th>GRADO</th>
+              <th>CARGO</th>
+              <th>ESPECIALIDAD</th>
+              <th>RH</th>
+              <th>LATITUD</th>
+              <th>LONGITUD</th>
+            </tr>
+          </thead>
+          <tbody align = 'center'> 
+            <tr *ngFor="let i of peloton">
+              <td style="cursor: pointer;">
+                <a class="figure-caption" color="blue" (click)="onSelected(i.id)" >{{i.id}}</a>
+              </td>
+              <td >
+                  <p >{{i.apellidos}}</p>
+                </td>
+                <td >
+                    <p >{{i.nombres}}</p>
+                  </td>
+              <td>
+                  <p >{{i.fechaNacimiento}}</p>
+              </td>
+              <td >
+                <p >{{i.grado}}</p>
+              </td>
+              <td >
+                <p >{{i.cargo}}</p>
+              </td>
+              <td>
+                <p  >{{i.especialidad}}</p>
+            </td>
+            <td >
+                <p  >{{i.rh}}</p>
+            </td>
+            <td >
+                <p  >{{i.latitud}}</p>
+            </td>
+            <td >
+                <p >{{i.longitud}}</p>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-1">
+        </div>
+    </div>
+
+
 
 <!-- ESTE FUNCIONAAAAA-->
 <!---<div #map style="width: 950px; height: 750px"></div>-->
