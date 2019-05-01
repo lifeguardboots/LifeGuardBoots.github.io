@@ -30,6 +30,7 @@ export class HistorialDetailComponent implements OnInit {
     */
   @Input() historialDetail: HistorialDetail;
 
+
   /**
     * The approbation's id retrieved from the address
     */
@@ -47,6 +48,8 @@ export class HistorialDetailComponent implements OnInit {
       });
   }
 
+  
+
  
 
   /**
@@ -54,19 +57,31 @@ export class HistorialDetailComponent implements OnInit {
     * We need to initialize the approbation so that it is never considered as undefined
     */
     ngOnInit() { 
-      const map = L.map('map').setView([2.9627290, -76.2546380], 14);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
     this.persona_id = +this.route.snapshot.paramMap.get('id');
     console.log("detail: ", this.persona_id);
     if (this.persona_id) {
       this.historialDetail = new HistorialDetail();
       this.getHistorialDetail();
     }
-    console.log("Detail:  ", this.historialDetail)
+    console.log("Detail:  ", this.historialDetail);
+    
+    
+
+
+    /** 
+    for (let index = 0; index < this.historialDetail.coordenadas.length; index++) {
+      var circle = L.circle(this.historialDetail.coordenadas[index], {
+        color: 'red',
+        fillColor: 'red',
+        fillOpacity: 0.5,
+        radius: 1
+    }).addTo(map)
+      
+    }
+    */
 
     }
+
+
 
 }

@@ -8,3 +8,4 @@ export class HistorialDetail extends Peloton{
         longitud: number;
     }
 
+

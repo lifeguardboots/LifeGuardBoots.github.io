@@ -13,6 +13,7 @@ import { RegistroComponent } from '../register/registro/registro.component';
 import { ListarSaludComponent } from '../salud/listar-salud/listar-salud.component';
 import { ListarHistorialComponent } from '../historial/listar-historial/listar-historial.component';
 import { ListarAlertasComponent } from '../alertas/listar-alertas/listar-alertas.component';
+import { HistorialDetailComponent } from '../historial/historial-detail/historial-detail.component';
 
 
 
@@ -41,6 +42,10 @@ const routes: Routes = [
     {
         path: 'historial',
         component: ListarHistorialComponent
+    },
+    {
+        path: 'historial/id',
+        component: HistorialDetailComponent
     },
     {
         path: 'alertas',
