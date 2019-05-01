@@ -6,28 +6,5 @@
     "grado":"CAPITAN","cargo":"OFICIAL",
     "especialidad":"ARTILLERIA",
     "latitud":2.9627290,"longitud":-76.2546380,
-     "rh": "O+",
-    "coordenadas": 
-    [
-        {
-            "latitud":2.9627290,
-            "longitud":-76.2546380
-        },
-        {
-            "latitud":2.9637290,
-            "longitud":-76.2556380
-        },
-        {
-            "latitud":2.9687290,
-            "longitud":-76.2596380
-        },
-        {
-            "latitud":2.9617290,
-            "longitud":-76.2576380
-        },
-        {
-            "latitud":2.9657290,
-            "longitud":-76.2546380
-        }
-     ]
+     "rh": "O+"
     }
