@@ -23,9 +23,9 @@
             <tr>
               <th>ID</th>
               <th>APELLIDOS</th>
+              <th>GRADO</th>
               <th>NOMBRES</th>
               <th>FECHA DE NACIMIENTO</th>
-              <th>GRADO</th>
               <th>CARGO</th>
               <th>ESPECIALIDAD</th>
               <th>RH</th>
@@ -39,6 +39,9 @@
                 <a class="figure-caption" color="blue" (click)="onSelected(i.id)" >{{i.id}}</a>
               </td>
               <td >
+                  <p >{{i.grado}}</p>
+                </td>
+              <td>
                   <p >{{i.apellidos}}</p>
                 </td>
                 <td >
@@ -46,9 +49,6 @@
                   </td>
               <td>
                   <p >{{i.fechaNacimiento}}</p>
-              </td>
-              <td >
-                <p >{{i.grado}}</p>
               </td>
               <td >
                 <p >{{i.cargo}}</p>

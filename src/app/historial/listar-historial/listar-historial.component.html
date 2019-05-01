@@ -1,3 +1,62 @@
-<p>
-  listar-historial works!
-</p>
+<div class="row">
+    <div class="col-1">
+        
+      </div>
+    <div class="col-7">
+      <h2 align="center">Historial de localizacion peloton 1</h2>
+      <table class="table table-sm table-dark">
+          <thead  align = 'center'>
+            <tr>
+              <th>ID</th>
+              <th>GRADO</th>
+              <th>APELLIDOS</th>
+              <th>NOMBRES</th>
+              <th>FECHA DE NACIMIENTO</th>
+              <th>CARGO</th>
+              <th>ESPECIALIDAD</th>
+              <th>RH</th>
+            </tr>
+          </thead>
+          <tbody align = 'center'> 
+            <tr *ngFor="let i of peloton">
+              <td>
+                <p>{{i.id}}</p>
+              </td>
+              <td >
+                  <p >{{i.grado}}</p>
+                </td>
+              <td >
+                  <p >{{i.apellidos}}</p>
+                </td>
+                <td >
+                    <p >{{i.nombres}}</p>
+                  </td>
+              <td>
+                  <p >{{i.fechaNacimiento}}</p>
+              </td> 
+              <td >
+                <p >{{i.cargo}}</p>
+              </td>
+              <td>
+                <p  >{{i.especialidad}}</p>
+            </td>
+            <td >
+                <p  >{{i.rh}}</p>
+            </td>
+            <td>
+              <button type="button" class="btn btn-outline-info" (click)="onSelected(i.id)" >Ver historial de localizacion</button>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-1">
+    
+      </div>
+      <div class="col-3">
+            <div *ngIf="selectedHistorial">
+                <app-historial-detail [historialDetail]="selectedHistorial"> </app-historial-detail>
+              </div>
+        </div>
+    </div>
+    

@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { MostrarmapaComponent } from './mostrarmapa/mostrarmapa.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapaDetailComponent } from './mapa-detail/mapa-detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule, 
-    AgmCoreModule
+    AgmCoreModule,
+    RouterModule
   ],
   declarations: [MostrarmapaComponent, MapaDetailComponent],
   exports: [MostrarmapaComponent]

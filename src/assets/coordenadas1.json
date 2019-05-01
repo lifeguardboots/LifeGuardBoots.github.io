@@ -1,0 +1,36 @@
+{
+    "id":1,
+    "apellidos":"FAUSCH",
+    "nombres":"WALLIE",
+    "fechaNacimiento":"07/02/1992",
+    "grado":"CAPITAN","cargo":"OFICIAL",
+    "especialidad":"ARTILLERIA",
+    "latitud":2.9627290,"longitud":-76.2546380, 
+    "rh": "O+",
+    "coordenadas":[
+        {
+            "latitud": 2.9627290,
+            "longitud":-76.2546380
+        },
+        {
+            "latitud": 2.9637290,
+            "longitud":-76.2596380
+        },
+        {
+            "latitud": 2.9697290,
+            "longitud":-76.2516380
+        },
+        {
+            "latitud": 2.9657290,
+            "longitud":-76.2516380
+        },
+        {
+            "latitud": 2.9627290,
+            "longitud":-76.2516380
+        }
+
+
+    ]
+
+
+}
