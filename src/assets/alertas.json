@@ -1,16 +1,6 @@
 [
     {
-    "id": 1,
-    "tipo": "SALUD",
-    "grado": "CABO PRIMERO",
-    "apellidos": "MACMASTER",
-    "nombres": "NATHANIL",
-    "fecha": "01/07/2019",
-    "latitud":2.9627290,
-    "longitud":-76.2546380
-    },
-    {
-        "id": 2,
+        "id": 1,
         "tipo": "FUERA DE ZONA",
         "grado": "CABO SEGUNDO",
         "apellidos": "ZORZETTI",
@@ -19,6 +9,16 @@
         "latitud":37.489877,
         "longitud":117.509921
 
+    },
+    {
+        "id": 2,
+        "tipo": "SALUD",
+        "grado": "CABO PRIMERO",
+        "apellidos": "MACMASTER",
+        "nombres": "NATHANIL",
+        "fecha": "01/07/2019",
+        "latitud":2.9627290,
+        "longitud":-76.2546380
     },
     {
         "id": 3,
@@ -41,5 +41,26 @@
         "latitud":22.463604,
         "longitud":-79.7231612
   
+    },
+    {
+        "id": 5,
+        "tipo": "REPORTE SECUESTRADO",
+        "grado": "SOLDADO",
+        "apellidos": "HARGET",
+        "nombres": "HUMBERT",
+        "fecha": "28/06/2019",
+        "latitud":22.463604,
+        "longitud":-79.7231612
+  
+    },
+    {
+        "id": 6,
+        "tipo": "SALUD",
+        "grado": "SOLDADO PROFESIONAL",
+        "apellidos": "GUILLEM",
+        "nombres": "TERRY",
+        "fecha": "01/07/2019",
+        "latitud":2.9627290,
+        "longitud":-76.2546380
     }
 ]

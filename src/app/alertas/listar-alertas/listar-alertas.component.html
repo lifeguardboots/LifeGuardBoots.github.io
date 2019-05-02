@@ -1,10 +1,10 @@
 <div class="card-columns">
 <div class="card text-white bg-danger mb-3" style="height: 100%;" *ngFor="let a of alertas" 
-[ngClass]="{'bg-success': a.tipo === 'SALUD' , 'bg-primary': a.tipo==='FUERA DE ZONA', 'bg-danger': a.tipo === 'REPORTE SECUESTRADO'}">
+[ngClass]="{'bg-dark': a.tipo === 'SALUD' , 'bg-warning': a.tipo==='FUERA DE ZONA', 'bg-danger': a.tipo === 'REPORTE SECUESTRADO'}">
     <div class="card-header">{{a.tipo}}</div>
     <div class="card-body" >
       <h5 class="card-title" style="font-size: 25px">{{a.id}}. {{a.tipo}}</h5>
-      <p class="card-text" align="center">{{a.fecha}}</p>
+      <p class="card-text" align="center">Fecha generado: {{a.fecha}}</p>
       <p class="card-text" align="center">{{a.grado}} {{a.apellidos}}, {{a.nombres}}</p>
       <p class="card-text" align="center">Generado en: [{{a.latitud}}, {{a.longitud}}]</p>
 
