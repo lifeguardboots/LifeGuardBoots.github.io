@@ -24,8 +24,10 @@ export class ListarHistorialComponent implements OnInit {
   }
 
   private recorrido(){
+    var lati = this.selectedHistorial.coordenadas[0].latitud;
+    var longi_inicial = this.selectedHistorial.coordenadas[0].longitud;
     
-    const map = L.map('map').setView([2.9627290, -76.2546380], 13);
+    const map = L.map('map').setView([lati, longi_inicial], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
