@@ -3,7 +3,6 @@ import { HistorialService } from '../historial.service';
 import { ActivatedRoute } from '@angular/router';
 import { HistorialDetail } from '../historial-detail';
 
-declare let L;
 
 @Component({
   selector: 'app-historial-detail',

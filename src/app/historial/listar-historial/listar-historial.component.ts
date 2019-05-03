@@ -42,9 +42,7 @@ export class ListarHistorialComponent implements OnInit {
         fillOpacity: 0.5,
         radius: 1
     }).addTo(map)
-    .bindPopup(coord)
-
-      
+    .bindPopup(coord) 
     }
 
     /** 
@@ -66,7 +64,9 @@ export class ListarHistorialComponent implements OnInit {
         console.log("En la lista") ;
        console.log(o) ;
        this.recorrido();
-      });
+      })
+      
+      ;
     }
     
 
