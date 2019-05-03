@@ -43,7 +43,7 @@ export class MostrarmapaComponent implements OnInit {
 
 
   ngOnInit() {
-    const map = L.map('map').setView([2.9627290, -76.2546380], 14);
+    const map = L.map('map').setView([2.9847290, -76.2476380], 14);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -86,6 +86,187 @@ var circulito = L.circle([2.9817390, -76.2456480], {
 });
 circulito.addTo(map)
 .bindPopup('<img src="../../../assets/cristancho.jpg" width="90px" height="100px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9812390, -76.2392480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9852390, -76.2492480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9822390, -76.2492480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9852390, -76.2422480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9832390, -76.2432480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9832390, -76.2492480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9882390, -76.2392480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9812390, -76.2452480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9872390, -76.2492480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9892390, -76.2412480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9852390, -76.2452480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+
+var circulito = L.circle([2.9812390, -76.2492480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9802390, -76.2402480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9802390, -76.2452480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9812390, -76.2402480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9892390, -76.2402480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9802390, -76.2472480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9812390, -76.292480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9872390, -76.2422480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+
+var circulito = L.circle([2.9842390, -76.2409480], {
+  color: 'green',
+  fillColor: 'green',
+  fillOpacity: 0.5,
+  radius: 1
+});
+circulito.addTo(map)
+.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 
 
