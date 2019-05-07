@@ -94,7 +94,7 @@ var circulito = L.circle([2.9812390, -76.2392480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9852390, -76.2492480], {
   color: 'green',
@@ -121,7 +121,7 @@ var circulito = L.circle([2.9852390, -76.2422480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9832390, -76.2432480], {
   color: 'green',
@@ -130,7 +130,7 @@ var circulito = L.circle([2.9832390, -76.2432480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9832390, -76.2492480], {
   color: 'green',
@@ -157,7 +157,7 @@ var circulito = L.circle([2.9812390, -76.2452480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9872390, -76.2492480], {
   color: 'green',
@@ -166,7 +166,7 @@ var circulito = L.circle([2.9872390, -76.2492480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9892390, -76.2412480], {
   color: 'green',
@@ -175,7 +175,7 @@ var circulito = L.circle([2.9892390, -76.2412480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9852390, -76.2452480], {
   color: 'green',
@@ -184,7 +184,7 @@ var circulito = L.circle([2.9852390, -76.2452480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 
 var circulito = L.circle([2.9812390, -76.2492480], {
@@ -212,7 +212,7 @@ var circulito = L.circle([2.9802390, -76.2452480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9812390, -76.2402480], {
   color: 'green',
@@ -221,7 +221,7 @@ var circulito = L.circle([2.9812390, -76.2402480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9892390, -76.2402480], {
   color: 'green',
@@ -230,7 +230,7 @@ var circulito = L.circle([2.9892390, -76.2402480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9802390, -76.2472480], {
   color: 'green',
@@ -239,7 +239,7 @@ var circulito = L.circle([2.9802390, -76.2472480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9812390, -76.292480], {
   color: 'green',
@@ -257,7 +257,7 @@ var circulito = L.circle([2.9872390, -76.2422480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 var circulito = L.circle([2.9842390, -76.2409480], {
   color: 'green',
@@ -266,7 +266,7 @@ var circulito = L.circle([2.9842390, -76.2409480], {
   radius: 1
 });
 circulito.addTo(map)
-.bindPopup('<img src="../../../assets/soldado.jpeg" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
+.bindPopup('<img src="../../../assets/soldado.png" width="120px" height="90px" align="middle" ><br><p align="center">JELF, GARROT</p><p> 2.9727390, -76.2646480 </p>' )
 
 
 
